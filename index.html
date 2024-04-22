@@ -139,7 +139,7 @@ h4{
 .buttons {
     overflow-x: auto;
     white-space: nowrap;
-    width: 100%;
+    width: 64%;
 }
 
 .button {
@@ -209,18 +209,21 @@ p{
             <button class="button" onclick="showContent(1)">Вторые блюда</button>
             <button class="button" onclick="showContent(2)">Первые блюда</button>
             <button class="button" onclick="showContent(3)">Салаты</button>
-            <button class="button" onclick="showContent(4)">Десерты</button>
+            <button class="button" onclick="showContent(4)">Напитки</button>
+            <button class="button" onclick="showContent(5)">Гарниры</button>
+            <button class="button" onclick="showContent(6)">Выпечка</button>
+            <button class="button" onclick="showContent(7)">Десерты</button>
         </div>
 </div>
 <div class="pyst"></div>
 
 <div class="container">
+    
     <div class="nomer">
        <h5>Чтобы сделать заказ позвоните по номеру 7(928)777-77-77
         <p>Оплатить можно на кассе или переводом по номеру телефона7(928) 888-88-88</p>
        </h5>
     </div>
-</div>
 
     <div class="content" id="content1"><div class="perv">
         <div id="container88">
@@ -352,14 +355,123 @@ p{
         <h4>275 рублей</h4>
     </div>
 </div>
-    </div>
-        </div>
+</div></div>
+
+    <div class="content" id="content2" style="display: none;"><div class="perv">
+        <div id="container">
+            <div class="product-image">
+                <img src="pod sirom.jpg" alt="Филе под сыром">
             </div>
-                <div class="content" id="content2" style="display: none;"><h3>Содержимое блока 2</h3></div>
-                <div class="content" id="content3" style="display: none;"><h3>Содержимое блока 3</h3></div>
-                <div class="content" id="content4" style="display: none;"><h3>Содержимое блока 4</h3></div>
+            <div class="product-details">
+                <h3>Филе под сыром </h3>
+                <h4>150 рублей</h4>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div class="product-image">
+                <img src="kiev.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h6>Котлета по - киевски</h6>
+                <h4>120 рублей</h4>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div class="product-image">
+                <img src="kotleta (2).jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h6>Котлета говяжья</h6>
+                <h4>110 рублей</h4>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div class="product-image">
+                <img src="1.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h3>Лягур с грибами в сливочном соусе</h3>
+                <h4>275 рублей</h4>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div class="product-image">
+                <img src="Foto/1.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h3>Лягур с грибами в сливочном соусе</h3>
+                <h4>275 рублей</h4>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div class="product-image">
+                <img src="1.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h3>Лягур с грибами в сливочном соусе</h3>
+                <h4>275 рублей</h4>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="content" id="content3" style="display: none;">
+        <div id="container88">
+            <div class="product-image">
+                <img src="nejni.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h6>Салат нежный</h3>
+                <h4>120 рублей</h4>
+            </div>
+        </div>
+        <div id="container88">
+            <div class="product-image">
+                <img src="nejni.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h6>Салат нежный</h3>
+                <h4>120 рублей</h4>
+            </div>
+        </div>
+        <div id="container88">
+            <div class="product-image">
+                <img src="tilapia.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h6>Тилапия</h3>
+                <h4>120 рублей</h4>
+            </div>
+        </div>
+    </div>
+        <div class="content" id="content4" style="display: none;">Содержимое блока 4</div>
+        <div class="content" id="content5" style="display: none;">Содержимое блока 5</div>
+        <div class="content" id="content6" style="display: none;">Содержимое блока 6</div>
+        <div class="content" id="content7" style="display: none;">
+            <div id="container">
+                <div class="product-image">
+                    <img src="blin.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h6>Блинный торт</h3>
+                    <h4>120 рублей</h4>
                 </div>
             </div>
+            <div id="container">
+                <div class="product-image">
+                    <img src="paxlva.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h6>Пахлава</h3>
+                    <h4>Я не знаю сколько она стоит</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -370,4 +482,13 @@ p{
         });
         document.getElementById('content' + num).style.display = 'block';
     }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JJ2VQBX5K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3JJ2VQBX5K');
 </script>
