@@ -78,7 +78,7 @@ svg:active {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 30px 40px ;
+            padding: 20px;
         }
         #container88 {
             box-shadow: 0 15px 15px 1px grey;
@@ -196,7 +196,7 @@ button:active {
     background: linear-gradient(to right, #CC0000, #990000); /* Горизонтальный градиент от желтого к красному */
     height: 300px;
     border-radius: 35px;
-    margin: 25px;
+    margin: 100px 35px;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -224,11 +224,46 @@ a{
     background: linear-gradient(to right, #CC0000, #990000); /* Горизонтальный градиент от желтого к красному */
     height: 130px;
     border-radius: 35px;
-    margin: 25px;
+    margin: 30px 150px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.5)
 }
+/*.skidka {
+            position: relative;
+            width: 850px;
+            height: 500px;
+            border-radius: 35px;
+            overflow: hidden;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+        .skfoto {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: blur(4px);
+            }
+        .ddd {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+        }
+        .sktext{
+    font-family: cuprum;
+    font-size: 60px;
+    color:aliceblue;
+    margin: 20px; 
+}*/
 
 </style>
 </head>
@@ -252,15 +287,8 @@ a{
             </div>
     </div>
 </div>
-<div class="pyst"></div>
 
-<div class="container">
-    <div class="nomer">
-        <h5>После 19:00 скидка 20% на всю продукцию.
-        <p>Доступны все виды оплаты.
-         Есть доставка и самовывоз.</p></h5>
-    </div>
-</div>
+<div class="pyst"></div>
 
 <div class="nknopki">
     <a href="tel:+79280815775" style="text-decoration: none;">
@@ -276,6 +304,24 @@ a{
     </a>
 
 </div>
+
+<div class="container">
+    <div class="nomer">
+        <h5>После 19:00 скидка 20% на всю продукцию.
+        <p>Доступны все виды оплаты.
+         Есть доставка и самовывоз.</p></h5>
+    </div>
+</div>
+
+<!--<div class="skidka">
+    <img src="blin.jpg" alt="Product Image" class="skfoto">
+        <div class="ddd">
+            <p class="sktext">После 19:00 скидка 20% на всю продукцию.
+                Доступны все виды оплаты.
+                 Есть доставка и самовывоз.</p>
+        </div>
+</div>
+-->
 
     <div class="content" id="content1"><div class="perv">
         <div id="container88">
@@ -562,6 +608,24 @@ a{
                 <div class="content" id="content4" style="display: none;"><div class="vtor">
                     <div id="container88">
                         <div class="product-image88">
+                            <img src="chizcake.jpg" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h3>Шоколадный чизкейк</h3>
+                            <h4>150 рублей</h4>
+                        </div>
+                    </div>
+                    <div id="container88">
+                        <div class="product-image88">
+                            <img src="korzinka.jpg" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h3>Корзинка</h3>
+                            <h4>120 рублей</h4>
+                        </div>
+                    </div>
+                    <div id="container88">
+                        <div class="product-image88">
                             <img src="blin.jpg" alt="Product Image">
                         </div>
                         <div class="product-details">
@@ -587,15 +651,7 @@ a{
                             <h4>160 рублей</h4>
                         </div>
                     </div>
-                    <div id="container88">
-                        <div class="product-image88">
-                            <img src="korzinka.jpg" alt="Product Image">
-                        </div>
-                        <div class="product-details">
-                            <h3>Корзинка</h3>
-                            <h4>120 рублей</h4>
-                        </div>
-                    </div>
+                    
                     <div id="container88">
                         <div class="product-image88">
                             <img src="napoleon.jpg" alt="Product Image">
@@ -605,15 +661,7 @@ a{
                             <h4>110 рублей</h4>
                         </div>
                     </div>
-                    <div id="container88">
-                        <div class="product-image88">
-                            <img src="chizcake.jpg" alt="Product Image">
-                        </div>
-                        <div class="product-details">
-                            <h3>Шоколадный чизкейк</h3>
-                            <h4>150 рублей</h4>
-                        </div>
-                    </div>
+                    
                     <div id="container88">
                         <div class="product-image88">
                             <img src="blin2.jpg" alt="Product Image">
