@@ -24,21 +24,29 @@
     margin: 0px;
     padding: 0px;
 }
+/* Для устройств шириной менее 768px (например, планшеты) */
+@media (max-width: 768px) {
+    /* Ваши стили здесь */
+}
+
+/* Для устройств шириной более 768px (например, компьютеры) */
+@media (min-width: 769px) {
+    /* Ваши стили здесь */
+}
 body{
     background-color:white;
 }
 .pyst{
-    height: 320px;
+    height: 420px;
 }
 .logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 180px;
+    height: 200px;
     width: 100%;
     position:fixed;
     background-color:white;
-    border-bottom: 6px solid #CC0000;
     z-index: 999;
 }
 .knopki{
@@ -46,6 +54,7 @@ body{
     top: 185px;
     background-color: white;
     z-index: 1000;
+    border-bottom: 4px solid #CC0000;
 }
 h1{
     font-family: Noto Serif Khojki;
@@ -59,13 +68,6 @@ h2{
     text-align: center;
     margin: 10px;
     padding: 10px;
-}
-svg{
-    padding: 30px;
-    color: #CC0000;
-}
-svg:active {
-    transform: translateY(4px);
 }
 
 #container {
@@ -151,22 +153,18 @@ h4{
     justify-content: center;
     flex-wrap: wrap;
 }
-.buttons {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 90%;
-}
 
-.button {
-    padding: 20px 40px;
-    margin: 25px 15px;
-    display: inline-block;
-    white-space: normal;
+.buttons {
+    height: 230px;
+}
+.btn {
+    padding: 15px 40px;
+    margin: 20px 0px 0px 20px;
     border: 3px solid #000000;
-    border-radius: 35px; /* Радиус скругления углов */
-    background-color: #fff; /* Цвет фона кнопки */
-    color: #000000; /* Цвет текста кнопки */
-    font-size: 30px;
+    border-radius: 35px; 
+    background-color: #fff; 
+    color: #000000;
+    font-size: 40px;
     font-weight: bold;
     font-family: cuprum;
 }
@@ -175,7 +173,7 @@ button:hover {
   border: 3px solid #CC0000;
   transform: scale(1.05);
 }
-button:active {
+.btn:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .perv {
@@ -275,11 +273,11 @@ a{
 
 <div class="knopki">
         <div class="buttons">
-            <button class="button" onclick="showContent(1)">Вторые блюда</button>
-            <button class="button" onclick="showContent(2)">Выпечка</button>
-            <button class="button" onclick="showContent(3)">Салаты</button>
-            <button class="button" onclick="showContent(4)">Десерты</button>
-            <button class="button" onclick="showContent(5)">Первые блюда</button>
+            <button class="btn" onclick="showContent(1)">Вторые блюда</button>
+            <button class="btn" onclick="showContent(2)">Выпечка</button>
+            <button class="btn" onclick="showContent(3)">Салаты</button>
+            <button class="btn" onclick="showContent(4)">Десерты</button>
+            <button class="btn" onclick="showContent(5)">Первые блюда</button>
         </div>
 </div>
 
